@@ -1,0 +1,42 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="quiz.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>QUIIIIIZ!!!!</h1>
+
+    <form id="quiz" name="quiz">
+
+        <p>Qual a capital do Brasil?</p>
+        <input id="capital" type="text" name="q1">
+
+        <p>Qual animal tem 4 patas?</p>
+        <input type="radio" id="4p" name="q2" value="pato">Pato<br>
+        <input type="radio" id="4p" name="q2" value="cachorro">Cachorro<br>
+        <input type="radio" id="4p" name="q2" value="formiga">Formiga<br>
+
+        <p>Qual desses e um gas?</p>
+        <input type="radio" id="gas" name="q3" value="oxigenio">Oxigenio<br>
+        <input type="radio" id="gas" name="q3" value="cachorro">Aluminio<br>
+        <input type="radio" id="gas" name="q3" value="formiga">Tugstenio<br>
+
+        <input id="btn" type="button" value="Pronto!" onclick="check();">
+
+    </form>
+
+    <div id="after_submit">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <img id="picture">
+    </div>
+</body>
+
+</html>
