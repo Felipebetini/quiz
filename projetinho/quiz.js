@@ -14,9 +14,8 @@ function check() {
         correct++
     }
 
-    let pictures = ["img/parabens.gif", "img/parabens.gif", "img/parabens.gif"];
-    var messages = ["Muito Bem!", "Mais ou Menos", "Tem que estudar mais!"]
-
+    var pictures = ["./img/parabens.gif", "./img/meh.gif", "./img/loser.gif"];
+    var messages = ["Muito Bem!", "Mais ou Menos", "Tem que estudar mais!"];
 
     var range;
     if (correct < 1) {
@@ -34,5 +33,5 @@ function check() {
     document.getElementById("after_submit").style.visibility = "visible";
     document.getElementById("message").innerHTML = messages[range];
     document.getElementById("number_correct").innerHTML = "Voce acertou: " + correct + " questoes";
-    document.getElementById["picture"].src = pictures[range];
+    document.getElementById("picture").src = pictures[range];
 }
